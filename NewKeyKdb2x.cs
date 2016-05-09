@@ -17,7 +17,7 @@ namespace KeePassNewKeyExport
 		public override bool SupportsImport { get { return false; } }
 		public override bool SupportsExport { get { return true; } }
 
-		public override string FormatName { get { return "KeePass KDBX (2.x) with new Password"; } }
+		public override string FormatName { get { return string.Format("KeePass KDBX (2.x) ({0})", KeePass.Resources.KPRes.ChangeMasterKey); } }
 		public override string DefaultExtension { get { return AppDefs.FileExtension.FileExt; } }
 		public override string ApplicationGroup { get { return PwDefs.ShortProductName; } }
 
