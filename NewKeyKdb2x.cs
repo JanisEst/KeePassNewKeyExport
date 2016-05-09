@@ -42,6 +42,28 @@ namespace KeePassNewKeyExport
 			PwDatabase pd = new PwDatabase();
 			pd.New(new IOConnectionInfo(), kcf.CompositeKey);
 
+			//copy settings
+			pd.Color = pwExportInfo.ContextDatabase.Color;
+			pd.Compression = pwExportInfo.ContextDatabase.Compression;
+			pd.DataCipherUuid = pwExportInfo.ContextDatabase.DataCipherUuid;
+			pd.DefaultUserName = pwExportInfo.ContextDatabase.DefaultUserName;
+			pd.Description = pwExportInfo.ContextDatabase.Description;
+			pd.HistoryMaxItems = pwExportInfo.ContextDatabase.HistoryMaxItems;
+			pd.HistoryMaxSize = pwExportInfo.ContextDatabase.HistoryMaxSize;
+			pd.KeyEncryptionRounds = pwExportInfo.ContextDatabase.KeyEncryptionRounds;
+			pd.MaintenanceHistoryDays = pwExportInfo.ContextDatabase.MaintenanceHistoryDays;
+			pd.MasterKeyChangeForce = pwExportInfo.ContextDatabase.MasterKeyChangeForce;
+			pd.MasterKeyChangeRec = pwExportInfo.ContextDatabase.MasterKeyChangeRec;
+			//pd.MemoryProtection.ProtectTitle = pwExportInfo.ContextDatabase.MemoryProtection.ProtectTitle;
+			//pd.MemoryProtection.ProtectUserName = pwExportInfo.ContextDatabase.MemoryProtection.ProtectUserName;
+			//pd.MemoryProtection.ProtectPassword = pwExportInfo.ContextDatabase.MemoryProtection.ProtectPassword;
+			//pd.MemoryProtection.ProtectUrl = pwExportInfo.ContextDatabase.MemoryProtection.ProtectUrl;
+			//pd.MemoryProtection.ProtectNotes = pwExportInfo.ContextDatabase.MemoryProtection.ProtectNotes;
+			pd.Name = pwExportInfo.ContextDatabase.Name;
+			pd.RecycleBinEnabled = pwExportInfo.ContextDatabase.RecycleBinEnabled;
+			//pd.UseFileLocks = pwExportInfo.ContextDatabase.UseFileLocks;
+			//pd.UseFileTransactions = pwExportInfo.ContextDatabase.UseFileTransactions;
+
 			//get used custom icons
 			pwExportInfo.DataGroup.TraverseTree(
 				TraversalMethod.PreOrder,
