@@ -12,4 +12,5 @@ INSTALLATION
 program directory
 - Start KeePass and open a database
 - In KeePass, export entries or groups and choose the new "KeePass KDBX (2.x) (Change Masterkey)" (the name is auto-translated, see screenshot) provider
+
 ![alt tag](http://abload.de/img/test15kx6.jpg)
