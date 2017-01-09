@@ -50,7 +50,7 @@ namespace KeePassNewKeyExport
 			pd.Description = pwExportInfo.ContextDatabase.Description;
 			pd.HistoryMaxItems = pwExportInfo.ContextDatabase.HistoryMaxItems;
 			pd.HistoryMaxSize = pwExportInfo.ContextDatabase.HistoryMaxSize;
-			pd.KeyEncryptionRounds = pwExportInfo.ContextDatabase.KeyEncryptionRounds;
+			//pd.KeyEncryptionRounds = pwExportInfo.ContextDatabase.KeyEncryptionRounds; // Removed in KeePass 2.35
 			pd.MaintenanceHistoryDays = pwExportInfo.ContextDatabase.MaintenanceHistoryDays;
 			pd.MasterKeyChangeForce = pwExportInfo.ContextDatabase.MasterKeyChangeForce;
 			pd.MasterKeyChangeRec = pwExportInfo.ContextDatabase.MasterKeyChangeRec;
