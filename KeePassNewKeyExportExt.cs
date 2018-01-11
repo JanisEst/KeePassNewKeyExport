@@ -18,7 +18,7 @@ namespace KeePassNewKeyExport
 
 		public override string UpdateUrl
 		{
-			get { return "https://github.com/KN4CK3R/KeePassNewKeyExport/raw/master/keepass.version"; }
+			get { return "https://github.com/JanisEst/KeePassNewKeyExport/raw/master/keepass.version"; }
 		}
 
 		public override bool Initialize(IPluginHost host)
